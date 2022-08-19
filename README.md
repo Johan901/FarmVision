@@ -44,7 +44,7 @@ Para así,  optimizar la producción , conservación del agua (pues se podrá de
 
 
 Tipo de Analitica:
-Diagnostics o Descriptiva
+Diagnostica o Descriptiva
 
 Objetivo de datos: (El cual revisaremos, escogeremos y puliremos según vaya tomando y avanzando el proyecto)
 Clustering) Clasificación automática
