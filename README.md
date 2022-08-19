@@ -18,8 +18,7 @@ Edgar Hincapié . 3 Julio, 2018. ABC de los sensores de humedad en las labores d
 
 Wilson Daniel Pinto Rios. 2015. MONITOREO DE CULTIVOS CON REDES DE SENSORES XBEE, ARDUINO, Y DISPOSITIVOS DE MEDICIÓN DE SUELOS. Recuperado de: https://core.ac.uk/download/pdf/71398859.pdf
 
-2018. LLEGAN LOS SENSORES DE DETECCIÓN DE HUMEDAD PARA LOGRAR UNA TIERRA FÉRTIL. Hablemos de Campo. 
-Recuperado de:
+Hablemos de Campo. 2018. LLEGAN LOS SENSORES DE DETECCIÓN DE HUMEDAD PARA LOGRAR UNA TIERRA FÉRTIL. Recuperado de:
 https://www.hablemosdelcampo.com/llegan-los-sensores-de-deteccion-de-humedad-para-lograr-una-tierra-fertil/
 
 Susan Parent.9 de noviembre de 2021. ¿Cómo influye la humedad en la calidad de los cultivos?. PROMIX. Recuperado de:	https://www.pthorticulture.com/es/centro-de-formacion/como-influye-la-humedad-en-la-calidad-de-los-cultivos/
