@@ -1,4 +1,29 @@
 # FarmVision
+
+By: Johan Hurtado, Paola Chaux, Steven Lopez and Diego Moreno.
+
+Educational project, for our programming course at our university.
+
+Titulo para el proyecto:
+FarmVision.
+Sistema de análisis y notificación de la temperatura en el huerto de la Universidad Autónoma de Occidente.
+
+
+Contexto de nuestro proyecto: 
+El contexto es el huerto de la Universidad Autónoma de Occidente ubicado en la ciudad de Santiago de Cali, Colombia. Donde obtendremos datos acerca de la temperatura del huerto en el clima tropical (para evitar posibles incedios forestales), con este se harà comparación haciendo énfasis en el scrapping del sitio web (https://es.climate-data.org/america-del-sur/colombia/valle-del-cauca-69/r/diciembre-12/) con los datos obtenidos y extraídos de la Universidad, y por consiguiente hacer el debido análisis y evitar posibles futuros accidentes como incendios forestales.
+
+Antecedentes:
+
+Sistema electrónico de alerta temprana para la detección de incendios. Recuperado de: https://repositorio.uta.edu.ec/bitstream/123456789/26220/1/Tesis_t1295ec.pdf
+
+Diseño de un sistema de protección contra incendios para el teatro de bogota de la universidad central. Recuperado de: https://repository.javeriana.edu.co/bitstream/handle/10554/19624/LunaRiveraEddieMauricio2016.pdf?sequence=1
+
+Crean red de sensores para prevenir incendios forestales. Recuperado de: https://transferencia.tec.mx/2018/08/14/crean-red-de-sensores-para-prevenir-incendios-forestales/
+
+Sistema de detección de incendios forestales mediante redes sensoriales inalámbricas. Recuperado de: http://dspace.ucuenca.edu.ec/bitstream/123456789/21330/1/MATCH%2714_01_Erazo%20%26%20Hervas.pdf
+
+
+
 By: Johan Hurtado, Paola Chaux, Steven Lopez and Diego Moreno.
 
 Educational project, for our programming course at our university.
@@ -49,5 +74,3 @@ Diagnostica o Descriptiva
 Objetivo de datos: (El cual revisaremos, escogeremos y puliremos según vaya tomando y avanzando el proyecto)
 Clustering) Clasificación automática
 Detección) (Sistema de recommendation)
-
-
