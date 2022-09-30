@@ -1,76 +1,172 @@
 # FarmVision
+Sistema de análisis y notificación de la temperatura en el huerto de la Universidad Autónoma de Occidente.
 
 By: Johan Hurtado, Paola Chaux, Steven Lopez and Diego Moreno.
 
 Educational project, for our programming course at our university.
 
-Titulo para el proyecto:
-FarmVision.
-Sistema de análisis y notificación de la temperatura en el huerto de la Universidad Autónoma de Occidente.
+
+Introducción
+
+La temperatura resulta en un factor importante porque influye en la fotosíntesis de plantas y algas, y la sensibilidad de los organismos frente a los residuos tóxicos, afecta la cantidad de oxígeno que puede transportar el agua y a menor temperatura transporta más oxígeno, así, como el alto rendimiento de los cultivos. Para las plantas, el agua no sólo sirve como agente de restauración de la humedad, sino también como regulador de la temperatura siendo algo indispensable para su buen desarrollo y en el sector medioambiental el aumento de la temperatura, los cambios en los patrones de lluvia y nieve, los cambios en las comunidades de plantas y otras alteraciones relacionadas con el clima han aumentado enormemente la probabilidad de que se produzcan incendios, y de mayor intensidad y amplitud que en el pasado,  donde requiere que en la mayoría de procedimientos se necesite llevar un control de cada uno de los factores que influyen en el desarrollo, y se pueden generar consecuencia que las cosechas no sean óptimas, y más riesgoso llegar a cualquier tipo de incendio; por eso es importante llevar un registro que permita prevenir futuros sucesos que representen riesgos de incendio.
 
 
-Contexto de nuestro proyecto: 
-El contexto es el huerto de la Universidad Autónoma de Occidente ubicado en la ciudad de Santiago de Cali, Colombia. Donde obtendremos datos acerca de la temperatura del huerto en el clima tropical (para evitar posibles incedios forestales), con este se harà comparación haciendo énfasis en el scrapping del sitio web (https://es.climate-data.org/america-del-sur/colombia/valle-del-cauca-69/r/diciembre-12/) con los datos obtenidos y extraídos de la Universidad, y por consiguiente hacer el debido análisis y evitar posibles futuros accidentes como incendios forestales.
+Justificación
 
-Antecedentes:
+Actualmente el control y análisis de la temperatura presente en el huerto universitario de la Universidad Autónoma de Occidente, es nulo o no se cuenta con un sensor permanente para prevenir golpes de calor, lo que implica que la absorción del agua se ve afectada por su temperatura, esto puede llegar a posibles pérdidas, exceso o falta de humedad en los suelos, lento crecimiento de los alimentos entre otros factores. Por esto se plantea la implementación de sensores de temperatura que analisen y se notifique tempranamente cuando las temperaturas excedan el límite establecido, en compañía de un código desarrollado específicamente para esta labor, analisen y detecten cuando la temperatura del huerto se eleve y de una alerta a los trabajadores para que tomen las medidas necesarias con el fin de mantener un ambiente óptimo.
+
+El análisis de la temperatura en el huerto de la universidad Autónoma de Occidente, así como los datos que serán  obtenidos,  serán llevados a múltiples comparaciones con datos externos que estén presentes en áreas de la ciudad de Cali; así como de información recolectada de otras fuentes de datos digitales. Mediante la analítica predictiva, se podrá  analizar e identificar  los límites en la temperatura 
+con la que se cuenta en el huerto universitario.
+
+
+Objetivos: 
+
+Objetivo General:
+Implementar y analizar las diferentes temperaturas del clima tropical, cálido y seco de la ciudad de Cali, específicamente del huerto de la Universidad Autónoma de Occidente con el fin de dar aviso temprano ante la  probabilidad de riesgo del punto de ignición.
+
+Objetivos Específicos:
+Recolectar datos de temperatura registrados en la Universidad Autónoma de Occidente.
+Analizar los registros de las bases de datos.
+Desarrollar un código que permita identificar la temperatura elevada y así dar un aviso.
+
+
+Nuestro contexto:
+
+El huerto de la Universidad Autónoma de Occidente ubicado en la ciudad de Cali se ha tomado como zona rural de prueba por las características similares a las de una granja, finca, etc. En el huerto se plantea obtener y analizar los datos acerca de la temperatura en el clima tropical presente en dicho huerto, así mismo en implementar un aviso previo como prevención para beneficiar tanto del crecimiento y desarrollo de las plantas existentes y su ambiente local, con este se harà énfasis en el web scraping, seguidamente con los datos obtenidos y comparando con los recolectados de la Universidad, se procedería a hacer el debido análisis e implementación en el control y seguimiento en caso de riesgos futuros para así brindar un mejor ambiente, así como su futuro ecosistema.
+
+Tipo de Analitica:
+Predictiva.
+
+Campo de aplicación de análisis de datos:
+
+El tipo de problema escogido se ubica en un campo de aplicación rural orientado al monitoreo y gestión digital de los datos mediante sensores de temperatura con el fin de prevenir posibles sucesos relacionados a las altas temperaturas que podrían  resultar en incendios a pequeña o gran escala en medio de estas zonas rurales afectando así a la fauna y flora presentes en este tipo de zonas.
+
+Antecedentes: 
 
 Sistema electrónico de alerta temprana para la detección de incendios. Recuperado de: https://repositorio.uta.edu.ec/bitstream/123456789/26220/1/Tesis_t1295ec.pdf
 
-Diseño de un sistema de protección contra incendios para el teatro de bogota de la universidad central. Recuperado de: https://repository.javeriana.edu.co/bitstream/handle/10554/19624/LunaRiveraEddieMauricio2016.pdf?sequence=1
+Diseño de un sistema de protección contra incendios para el teatro de bogotá de la universidad central. Recuperado de: https://repository.javeriana.edu.co/bitstream/handle/10554/19624/LunaRiveraEddieMauricio2016.pdf?sequence=1
 
-Crean red de sensores para prevenir incendios forestales. Recuperado de: https://transferencia.tec.mx/2018/08/14/crean-red-de-sensores-para-prevenir-incendios-forestales/
+Crean una red de sensores para prevenir incendios forestales. Recuperado de: https://transferencia.tec.mx/2018/08/14/crean-red-de-sensores-para-prevenir-incendios-forestales/
 
-Sistema de detección de incendios forestales mediante redes sensoriales inalámbricas. Recuperado de: http://dspace.ucuenca.edu.ec/bitstream/123456789/21330/1/MATCH%2714_01_Erazo%20%26%20Hervas.pdf
-
-
-
-By: Johan Hurtado, Paola Chaux, Steven Lopez and Diego Moreno.
-
-Educational project, for our programming course at our university.
-
-
-Contexto de nuestro proyecto:
-El contexto es el huerto de la Universidad Autónoma de Occidente ubicado en la ciudad de Cali donde obtendremos datos acerca de la humedad del suelo en el clima tropical y sus estándares para resultar en suelo ideal y rica para el cultivo de (cultivo), con este se harà comparación haciendo énfasis en el scrapping del sitio web (sitio web) con los datos obtenidos y extraídos de la Universidad, y por consiguiente hacer el debido análisis y hacer uso de él en la mejora de la distribución y elección del suelo apto y mejor para algunos cultivos (o tipo de cultivo).
-
-Titulo para el proyecto:
-FarmVision
-
-
-Antecedentes:
-El Control De La Humedad Del Suelo: Un Factor Clave.Earth Observing System. Recuperado de:  https://eos.com/es/blog/humedad-del-suelo/
-
-Edgar Hincapié . 3 Julio, 2018. ABC de los sensores de humedad en las labores de riego.Recuperado de: https://www.cenicana.org/abc-de-los-sensores-de-humedad-en-las-labores-de-riego/
-
-Wilson Daniel Pinto Rios. 2015. MONITOREO DE CULTIVOS CON REDES DE SENSORES XBEE, ARDUINO, Y DISPOSITIVOS DE MEDICIÓN DE SUELOS. Recuperado de: https://core.ac.uk/download/pdf/71398859.pdf
-
-Hablemos de Campo. 2018. LLEGAN LOS SENSORES DE DETECCIÓN DE HUMEDAD PARA LOGRAR UNA TIERRA FÉRTIL. Recuperado de:
-https://www.hablemosdelcampo.com/llegan-los-sensores-de-deteccion-de-humedad-para-lograr-una-tierra-fertil/
-
-Susan Parent.9 de noviembre de 2021. ¿Cómo influye la humedad en la calidad de los cultivos?. PROMIX. Recuperado de:	https://www.pthorticulture.com/es/centro-de-formacion/como-influye-la-humedad-en-la-calidad-de-los-cultivos/
-
-Sotomayor J.; Gómez A.; Cela A. 2014. Sistema de Visión Artificial para el Análisis de Imágenes de Cultivo basado en Texturas Orientadas. REVISTA EPN, VOL. 33. Quito, Ecuador: Escuela Politécnica Nacional, Facultad de Ingeniería Eléctrica y Electrónica. recuperado de: http://revistapolitecnica.epn.edu.ec/ojs2/index.php/revista_politecnica2/article/download/104/pdf
-
-http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S0258-59362015000400013
-
-2019.La inteligencia artificial ayuda a los productores de banano a proteger la fruta favorita del planeta. Agronet, Ministerio de Agricultura. Recuperado de: https://www.agronet.gov.co/Noticias/Paginas/La-inteligencia-artificial-ayuda-a-los-productores-de-banano-a-proteger-la-fruta-favorita-del-planeta.aspx
-
-Jorge S. Torres A., Ph. D.2014.Principios básicos para identificar problemas de drenaje en el cultivo de la palma.Centro de Investigación en Palma de Aceite - Cenipalma. recuperado de: https://publicaciones.fedepalma.org/index.php/boletines/article/download/10966/10953/
-
-Juan M. Enciso, Dana Porter y Xavier Périès. Uso de sensores de humedad del suelo para eficientizar el riego. Texas AgriLife Extension. recuperado de: http://riograndewater.org/media/1080/e-618s-irrigation-monitoring-with-soil-water-sensors-spanish-version.pdf
-
-Lincoln Zotarelli, Michael D. Dukes, y Kelly T. Morgan. INTERPRETACIÓN DEL CONTENIDO DE LA HUMEDAD DEL SUELO PARA DETERMINAR CAPACIDAD DE CAMPO Y EVITAR RIEGO EXCESIVO EN SUELOS ARENOSOS UTILIZANDO SENSORES DE HUMEDAD.IFAS extension, University of Florida. recuperado de:
-https://edis.ifas.ufl.edu/publication/AE496
+Sistema de detección de incendios forestales mediante redes sensoriales inalámbricas. Recuperado de: http://dspace.ucuenca.edu.ec/bitstream/123456789/21330/1/MATCH%2714_01_Erazo%20%26%20Hervas.p
 
 
 
-¿Por qué es importante y qué pregunta/problema pretende responder  de los datos que se extraerán?
-La importancia del análisis de la humedad del suelo en el huerto de la universidad Autónoma de Occidente así como los datos obtenidos, recae en su utilidad para compararlos con datos externos que estén presentes en el suelo de diferentes huertos locales así como de información recolectada de otras fuentes de datos digitales, mediante la analitica de diagnostica y descriptiva, es decir, analizar e identificar  las características que necesita la tierra con la que se cuenta en el huerto universitario para ser un suelo ideal de cultivo (Tipo de cultivo aún por definir).
-Para así,  optimizar la producción , conservación del agua (pues se podrá determinar la cantidad a aplicar y cuándo aplicarla) , reducir los impactos ambientales y ayudar a ahorrar económicamente a nuestros clientes . lograremos ayudar a mejorar la toma de decisiones en la programación de  sembrado
+Paginas para web scraping:
+
+https://es.climate-data.org/america-del-sur/colombia/valle-del-cauca-69/r/diciembre-12/
 
 
-Tipo de Analitica:
-Diagnostica o Descriptiva
 
-Objetivo de datos: (El cual revisaremos, escogeremos y puliremos según vaya tomando y avanzando el proyecto)
-Clustering) Clasificación automática
-Detección) (Sistema de recommendation)
+Análisis del mapa del sitio web:
+
+Analytics and Tracking
+
+Google Analytics
+Google Universal Analytics
+
+Content Delivery Network
+
+Cloudflare
+GStatic Google Static Content
+jQuery CDN
+
+JavaScript Libraries and Functions
+
+Modernizr
+
+Web Hosting Providers
+
+Cloudflare Hosting Usage Statistics
+
+SSL Certificates
+
+Cloudflare SSL
+SSL by Default
+
+Name Server
+
+Cloudflare DNS
+
+Email Hosting Providers
+
+SPF
+Microsoft Azure DNS
+Microsoft Exchange Online
+Office 365 Mail
+
+Operating Systems and Servers
+
+IPv6
+
+
+Content Delivery Network
+
+Content Delivery Network
+
+Web Master Registration
+
+MSN/Bing Webmaster
+
+Analisis del propietario 
+
+Domain Information
+
+Nombre
+
+climate-data.org
+
+Internationalized Domain Name
+
+climate-data.org
+
+Name servers
+
+gail.ns.cloudflare.com
+lars.ns.cloudflare.com
+
+Registry Expiration
+
+ 2028-08-08 11:47:52 UTC
+
+Updated
+
+2020-02-02 13:30:18 UTC
+
+Created
+
+ 2012-08-08 11:47:52 UTC
+
+Contact Information
+
+
+
+Organization
+
+ Moniker Privacy Services
+
+Mailing Address
+
+FL, US
+
+Registrar Information
+
+Name
+
+ Moniker Online Services LLC
+
+Abuse contact email
+
+abuse@moniker.com
+
+Abuse contact phone
+
+ tel:+49.68949396850
+ 
+
+Notebook: 
+
+https://colab.research.google.com/drive/1VSNCDHLSQ9gT0YIcyOavGM9RpvAiqE03?usp=sharing 
+
+
