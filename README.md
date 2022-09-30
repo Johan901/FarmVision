@@ -52,10 +52,28 @@ Crean una red de sensores para prevenir incendios forestales. Recuperado de: htt
 Sistema de detección de incendios forestales mediante redes sensoriales inalámbricas. Recuperado de: http://dspace.ucuenca.edu.ec/bitstream/123456789/21330/1/MATCH%2714_01_Erazo%20%26%20Hervas.p
 
 
+Análisis, Inventario de fuentes:
+https://docs.google.com/spreadsheets/d/14CMryvU_fwiUfATsR8srXumoC9gKNd7o/edit#gid=1224711283  
+
+
+Tamaño del sitio web:
+
+Script 83,33% = 281.6 KB
+Image 4,30% = 14.0 KB
+HTML 3,89% = 12.7 KB
+CSS 3,38% = 11.0 KB
+
+Script 75,09% = 299.5 KB
+Image 13,81% = 55.1 KB
+HTML 4,50% = 17.9 KB
+XHR 2,93% = 11.7 KB
+CSS 2,75% = 11.0 KB
+
 
 Paginas para web scraping:
 
 https://es.climate-data.org/america-del-sur/colombia/valle-del-cauca-69/r/diciembre-12/
+https://es.climate-data.org/america-del-sur/colombia/valle-del-cauca/cali-3426/  
 
 
 
