@@ -1,0 +1,10 @@
+En el presente archivo plano se presentara la(s) varaible(S) de interes en el proyecto de segundo semestre en el cual se inicio
+un levantamiento de datos como objetivo de dar un seguimiento y control del cambio de la temperatura en el huerto de la Universidad 
+Atonoma de Occidente, tambien del previo aviso post exposicion elevada del aumento de dicha temperatura en el lugar; las siguientes 
+variables  fueron:
+1. Temperatura: 
+    Temperatura minima:25.8 C
+    Temperatura maxima: 33.8 C
+    Total de datos/dia: 296 
+    Total de dias: 22 dias
+    Total de datos: 6468 datos en total
