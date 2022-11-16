@@ -35,7 +35,7 @@ Nuestro contexto:
 El huerto de la Universidad Autónoma de Occidente ubicado en la ciudad de Cali se ha tomado como zona rural de prueba por las características similares a las de una granja, finca, etc. En el huerto se plantea obtener y analizar los datos acerca de la temperatura en el clima tropical presente en dicho huerto, así mismo en implementar un aviso previo como prevención para beneficiar tanto del crecimiento y desarrollo de las plantas existentes y su ambiente local, con este se harà énfasis en el web scraping, seguidamente con los datos obtenidos y comparando con los recolectados de la Universidad, se procedería a hacer el debido análisis e implementación en el control y seguimiento en caso de riesgos futuros para así brindar un mejor ambiente, así como su futuro ecosistema.
 
 Tipo de Analitica:
-Predictiva.
+Descriptiva.
 
 Campo de aplicación de análisis de datos:
 
@@ -186,5 +186,51 @@ Abuse contact phone
 Notebook: 
 
 https://colab.research.google.com/drive/1VSNCDHLSQ9gT0YIcyOavGM9RpvAiqE03?usp=sharing 
+
+
+Descripción del dataset:
+
+Cantidad de datos por columna: 296.
+Cantidad de datos por filas: 22.
+Cantidad de datos en total: 6512.
+Tipo de datos: Str & Int.
+Contenido de los datos: Número de día y valor de temperatura representada en °C.
+
+
+Conclusiones:
+
+Con base en el proceso y los resultados logramos evidenciar la clara necesidad que se presenta en el huerto universitario, no solo en alusión a la falta de un sensor que advierta sobre estos cambios de temperatura, sino sobre la carencia de bases de datos sobre temperatura teniendo en cuenta que el huerto es un importante lugar de investigación para diferentes programas. Los resultados que responden al problema planteado en este proyecto logran resolver la problemática puesto que gracias al levantamiento de datos en esta zona se logra identificar los parámetros precisos con los cuales configurar la solución relacionada al software y hardware. Desde la visión de AI, se puede mejorar la precisión del circuito planteado, así mismo usar los datos recolectados para implementar un sistema autónomo que no solo ayude a detectar sino también tome las medidas necesarias para contrarrestar aquellas temperaturas elevadas. 
+
+
+Recomendaciones y trabajos futuros:
+
+Para este entregable de proyecto final se realizan las siguientes recomendaciones y trabajos a futuro que se pueden realizar que mejoren las aportaciones presentes que se han hecho con la toma de las variaciones de las diferentes temperaturas que se presentaron durante 22 (veintidos) días en el huerto de la Universidad Autónoma de Occidente del presente año con el objetivo de llevar un control y observación restrictiva de la temperatura para tomar las mejores medidas con rapidez en caso de urgencia como es en el caso de un posible aumento de la temperatura, posibles incendios u ocasiones que generen alguna posibilidad de peligro para este huerto y sum ambiente manteniendo un ambiente nivelado que permita trabajar con eficacia y seguir de ayuda para los distintos trabajos para los que se utiliza, se podría optar por la mejora de equipos de hardware que mantengan presentes/fijos en el lugar de trabajo para darle más atención para mejorar los procesos por memoria o tanteo, también se recomienda establecer un programa de software avanzado que ordene y guarde automáticamente los datos para automatizar los procesos, queda pendiente tambien el cambio de minimos y maximos que se usaran como referencia para las fututras alertas ya que se debe tener en cuenta el cambio bruscos del comportamieneto de temperatura de paises tropicales a lo largo de los anos que mantengan tanto el proceso como el historial para mayoor control y garantizar mayor seguridad necesaria.
+
+A continuación de este proyecto se recalca que también como en cualquier otro surgen diversos temas o ideas que quedan abiertos para futuros trabajos o proyectos que deseen atacar la misma temática y que se pueden apoyar con la investigación levantada en el presente o también puntos generales que se pueden retomar posteriormente de los cuales se pueden destacar los siguientes:
+
+Realizar el estudio teniendo en cuentas más variables para obtener un resultado más preciso de cualquier punto u objetivo a llevar a cabo, donde se llevará un mayor avance y no se dejará por fuera información alguna que pueda servir de ayuda y apoyo en un posterior momento.
+
+En el caso de querer realizar una interface o software para el manejo y control automático de los funcionarios del huerto para maximizar tiempo se debe optar por algo muy completo, mas amigable o fácil de manejar para el usuario en caso de crisis o una ágil y veloz respuesta en posibles casos de urgencia.
+
+Implementar/ probar el modelo y metodología en diferentes niveles que permita comprobar su eficiencia y operatividad o también expandir esos modelos y metodologías.
+
+Diseño e implementación del almacenamiento en una base de datos en la nube desde el tiempo 0 de su instalación sin parar en donde cualquier persona tanto de la universidad como exterior pueda acceder para llevar un historial en caso de estudios, generando una gestión de datos, resolución de problemas, identificación y documentación a estos datos para posibles problemas/oportunidades futuras.
+
+Se puede utilizar la información recogida en el año 2022 para posibles trabajos de analitica de los cambios en el medio ambiente con el paso del tiempo.
+
+Análisis de los datos como punto de el tiempo, rapidez, velocidad de los cambios de las temperatura.
+
+Desarrollar procesos de planificación e implementación de la identificación de los riesgos ambientales y sociales, sugerir estrategias y procedimientos para disminuir los impactos negativos en el medioambiente establecido, ampliar los impactos positivos. 
+
+Hallar correlaciones de las diferentes variables que se pueden obtener con distintos sensores en la búsqueda de una mejoría en algún aspecto.
+
+Monitoreo y pronóstico de lluvias, tormentas eléctricas, temperatura, humedad, entre otras variables climáticas para una ubicación puntual en un periodo determinado.
+
+
+¿Cómo y en donde publicarían los datos obtenidos (tableros, etc)?
+
+Primeramente todos los datos obtenidos de nuestro proyecto serían publicados en la plataforma de Datos Abiertos. Los datos abiertos en Colombia son información pública dispuesta en formatos que permiten su uso y reutilización bajo licencia abierta y sin restricciones legales para su aprovechamiento. Para publicar nuestros datos en este portal, simplemente, tendremos que crear una cuenta, acceder a ella, e importar todos los archivos que se subirán a Datos Abiertos. 
+También contamos con los foros de agricultura, donde también la gente podrá acceder a todos los datos y finalmente nuestro proyecto quedará en nuestro GitHub para que cualquier persona pueda entrar, leer y enterarse de todo el proceso que hemos realizado.
+
 
 
