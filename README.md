@@ -188,6 +188,114 @@ Notebook:
 https://colab.research.google.com/drive/1VSNCDHLSQ9gT0YIcyOavGM9RpvAiqE03?usp=sharing 
 
 
+
+Hoy en día los avances tecnológicos han progresado considerablemente, lo que ha propiciado de
+disponer del manejo de distintos factores esenciales del clima, los cuales pueden aumentar la calidad, cantidad y efectividad de la producción en huertos. Además de que se vuelva una producción durante todo el año, disminuyendo costos del producto originando competitividad en el mercado.
+Al hablar de automatización es la forma adecuada de interactuar variables y elementos para un fin específico, para esta propuesta se tomó en cuenta el parámetro a manejar (Temperatura) dentro del interior del huerto de la UAO, tomando en cuenta todos los elementos involucrados en el proceso para regular y mantener la temperatura, cuyo factor es de suma importancia para el desarrollo, crecimiento y maduración de la planta generando una mejor calidad del producto, en menor tiempo y a bajos costos, dicha propuesta se menciona a continuación:
+
+El sistema consiste en un dispositivo digital, que mide la temperatura en el interior del huerto con el fin de tomar alertas dependiendo distintos rangos de temperatura, para ello se utilizó un sistema de control el cual está compuesto por la siguiente estructura:
+
+Raspberry pi pico:
+La serie Raspberry Pi Pico es una gama de placas pequeñas, rápidas y versátiles construidas con RP2040, el chip microcontrolador insignia diseñado por Raspberry Pi en el Reino Unido.
+
+Raspberry Pi Pico es la primera placa de clase de microcontrolador de Raspberry Pi. Construido alrededor nuestra plataforma de silicio RP2040, Pico trae nuestros valores característicos de alto rendimiento, bajo costo y facilidad de uso al espacio del microcontrolador.
+Con una gran memoria en chip, complejo de procesador de doble núcleo simétrico, determinista
+estructura de bus y un rico conjunto de periféricos aumentado con nuestra exclusiva E/S programable (PIO) subsistema, RP2040 proporciona a los usuarios profesionales una potencia y flexibilidad inigualables.
+Con documentación detallada, un puerto Micro Python pulido y un cargador de arranque UF2 en
+ROM, tiene la barrera de entrada más baja posible para usuarios principiantes y aficionados. RP2040 se fabrica en un nodo de proceso moderno de 40 nm, que ofrece un alto rendimiento,
+Bajo consumo de energía dinámico y baja fuga, con una variedad de modos de bajo consumo para admite operación de duración extendida con energía de batería. Raspberry Pi Pico empareja RP2040 con 2 MB de memoria Flash y un chip de fuente de alimentación admite voltajes de entrada de 1.8-5.5V. Proporciona 26 pines GPIO, tres de los cuales pueden funcionan como entradas analógicas, en pads de orificio pasante con paso de 0,1” y bordes almenados.
+Raspberry Pi Pico está disponible como una unidad individual o en carretes de 480 unidades para automatización asamblea.
+
+Especificaciones:
+Factor de forma de 21 mm × 51 mm.
+Chip microcontrolador RP2040 diseñado por Raspberry Pi en el Reino Unido.
+Procesador Arm Cortex-M0+ de doble núcleo, reloj flexible de hasta 133 MHz.
+SRAM en chip de 264 kB.
+Flash QSPI integrado de 2 MB.
+LAN inalámbrica 802.11n de 2,4 GHz (solo Raspberry Pi Pico W y WH).
+26 pines GPIO multifunción, incluidas 3 entradas analógicas.
+2 × UART, 2 controladores SPI ×, 2 controladores I2C ×, 16 canales PWM.
+1 × controlador USB 1.1 y PHY, con soporte para host y dispositivo.
+8 × máquinas de estado de E/S programables (PIO) para compatibilidad con periféricos personalizados.
+Potencia de entrada soportada 1.8–5.5V DC.
+Temperatura de funcionamiento -20 °C a +85 °C (Raspberry Pi Pico y Pico H); -20°C a +70°C (Raspberry Pi Pico W y Pico WH).
+El módulo Castellated permite soldar directamente a placas portadoras (solo Raspberry Pi Pico y Pico W).
+Programación de arrastrar y soltar mediante almacenamiento masivo a través de USB.
+Modo de reposo y latencia de bajo consumo.
+Reloj preciso en chip.
+Sensor de temperatura.
+Bibliotecas aceleradas de enteros y coma flotante en chip.
+
+Pantalla LCD 16x2:
+Un pequeño dispositivo con pantalla de cristal líquido que cuenta con dos filas, de dieciséis caracteres cada una, que se utiliza para mostrar información, por lo general alfanumérica. Las capacidades de estos dispositivos son altas, pues se puede mostrar todo tipo de información sin importar qué tipo de símbolos o caracteres sean, el idioma o el lenguaje, pues el sistema puede mostrar cualquier carácter alfanumérico, símbolos y algunas figuras, el número de píxeles que tiene cada símbolo o carácter varía dependiendo del modelo del dispositivo y cada artefacto está controlado por un microcontrolador que está programado para dirigir el funcionamiento y la imagen mostrada en la pantalla.
+
+Especificaciones:
+Tipo: Pantalla LCD Monocromática.
+Voltaje de alimentación: 5V DC.
+Interfaz de comunicación: Paralelo 4 u 8 bits.
+Filas: 2.
+Columnas:16.
+Controlador: HD44780.
+Color: Fondo azul y texto blanco.
+Modo de operación: 4 y 8 bits.
+Corriente máximo: 25mA.
+Peso: 32 g.
+
+
+
+Sensor de temperatura DHT22:
+Es un sensor digital de temperatura y humedad relativa de buen rendimiento y bajo costo. Integra un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos (no posee salida analógica). Utilizado en aplicaciones de control automático de temperatura, aire acondicionado, monitoreo ambiental en agricultura y más. 
+Utilizar el sensor DHT22 con las plataformas Arduino/Raspberry Pi/Nodemcu es muy sencillo tanto a nivel de software como hardware. A nivel de software se dispone de librerías para Arduino con soporte para el protocolo "Single bus". En cuanto al hardware, solo es necesario conectar el pin VCC de alimentación a 3-5V, el pin GND a Tierra (0V) y el pin de datos a un pin digital en nuestro Arduino. Si se desea conectar varios sensores DHT22 a un mismo Arduino, cada sensor debe tener su propio pin de datos. Quizá la única desventaja del sensor es que sólo se puede obtener nuevos datos cada 2 segundos. Cada sensor es calibrado en fabrica para obtener unos coeficientes de calibración grabados en su memoria OTP, asegurando alta estabilidad y fiabilidad a lo largo del tiempo. El protocolo de comunicación entre el sensor y el microcontrolador emplea un único hilo o cable, la distancia máxima recomendable de longitud de cable es de 20m., de preferencia utilizar cable apantallado. Proteger el sensor de la luz directa del sol (radiación UV).
+El DHT22 presenta mejores prestaciones respecto al sensor DHT11, como mejor resolución, mayor precisión y un empaque más robusto.
+
+
+Especificaciones 
+Voltaje de Operación: 3V - 6V DC
+Rango de medición de temperatura: -40°C a 80 °C
+Precisión de medición de temperatura: <±0.5 °C
+Resolución Temperatura: 0.1°C
+Rango de medición de humedad: De 0 a 100% RH
+Precisión de medición de humedad: 2% RH
+Resolución Humedad: 0.1%RH
+Tiempo de censado: 2s
+Interfaz digital: Single-bus (bidireccional)
+Modelo: AM2302
+Dimensiones: 20*15*8 mm
+Peso: 3 gr.
+Carcasa de plástico blanco
+
+Pines:
+1- Alimentación: +5V (VCC)
+2- Datos (DATA)
+3- No Usado (NC)
+4- Tierra (GND)
+
+
+Sensor digital de Temperatura DS18B20:
+A prueba de agua. De fácil uso con microcontroladores como Arduino, PIC, ESP8266/ESP32. El sensor incluye internamente toda la electrónica necesaria: censado, acondicionamiento, conversión analógica a digital e interfaz digital. Permite conocer la temperatura utilizando solo 1 cable para datos (1-Wire). Permite utilizar simultáneamente varios sensores en el mismo bus ya que cada sensor tiene un identificador único de fábrica.
+Entre sus aplicaciones más comunes está el censado de temperatura en ambientes de edificios, aire acondicionado, maquinaria, control y monitoreo de procesos industriales, etc.
+
+Especificaciones 
+Voltaje de operación: 3.0V – 5.5V DC
+Rango de medición: -55℃ hasta +125℃ (-67°F a +257°F)
+Precisión en el rango de -10°C hasta +85°C: ±0.5°C.
+Resolución ADC seleccionable de 9-12 bits
+Cables: Rojo (+VCC), Blanco (DATA 1-Wire), Negro (GND)
+Protocolo 1-Wire, solo necesita 1 pin para comunicarse
+Identificación única de 64 bits
+Cubierta de acero inoxidable de alta calidad, previene la oxidación de la sonda
+Sonda a prueba de agua
+Longitud de cable: 1m
+Dimensiones sonda: D5mm*L50mm
+Peso: 23 gramos
+
+
+El circuito desarrollado está compuesto por un grupo de sensores que se encargan de medir las variables físicas al interior del huerto, las cuales son leídas por un sistema de adquisición de datos micro controlado, en éste caso la Raspberry pi pico, el que a su vez se encarga del control de las variable de  temperatura, para que permanezcan en un rango deseado, el microcontrolador también se encarga de enviar la señal de control para que la etapa de potencia suministre la corriente necesaria a los actuadores. Las medidas adquiridas por el microcontrolador son enviados a un servidor web mediante el módulo de comunicación Ethernet Shield de Arduino para ser registrados en una base de datos, a la cual se puede acceder de forma fácil
+
+Para establecer nuestro sistema de automatización “FarmVision”, se tuvo en cuenta que la temperatura ideal para un cultivo o planta varía entre los 17 y 24 C durante el día y entre 13 y 17 C durante la noche; así que, el  proceso comienza censando una temperatura, una vez teniendo dicha temperatura, se toma una decisión; donde, si la temperatura está dentro del rango, hará un bucle para volver a tomar una nueva temperatura; si en caso la temperatura no está dentro del rango pasa a tomar otra decisión, que es dar una alerta a nuestro usuario, el viverista , pues se dará la notificación si  la temperatura es mayor al límite superior (mayor temperatura, caliente) o si la temperatura es menor al límite inferior (menor temperatura, frío), teniendo esta estructura se desarrolla un óptimo logaritmo de proceso, dando así un bucle por las lecturas tomadas por el sensor , dichas tomas de lectura se mostrarán en un display lcd con el propósito del monitoreo, temperatura baja (-), temperatura alta (+), temperatura correcta(//) y mostrando la temperatura tomada en cada momento
+
+
+
 Descripción del dataset:
 
 Cantidad de datos por columna: 296.
